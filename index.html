@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ala Temizlik | Halı ve Koltuk Yıkama, Yerinde Temizlik</title>
-<meta name="description" content="Halı, koltuk, yatak ve perde temizliği. Adresinizden alır, yıkar, kurutur ve aynı hafta içinde teslim ederiz. Ücretsiz keşif için hemen arayın.">
+<title>Alâ Temizlik | Halı ve Koltuk Temizliği, Evinize Geliyoruz</title>
+<meta name="description" content="Halı, koltuk ve yatak temizliği. Makinemizle evinize gelir, yerinde temizleriz. Ücretsiz fiyat için hemen arayın.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -58,20 +58,23 @@ nav a:hover{opacity:1;color:var(--sun)}
 
 /* Önce / sonra */
 .ba{position:relative;aspect-ratio:4/3;border-radius:28px;overflow:hidden;border:6px solid rgba(255,255,255,.14);box-shadow:0 30px 60px rgba(0,0,0,.35);user-select:none;touch-action:pan-y}
-.rug{position:absolute;inset:0;
+.scene{position:absolute;inset:0;background:repeating-linear-gradient(90deg,#c9a173 0 62px,#b4885a 62px 64px)}
+.rug{position:absolute;inset:15% 11%;border-radius:12px;border:7px solid #f4e6c8;box-shadow:0 16px 26px rgba(0,0,0,.35);
   background:
-    radial-gradient(circle at 50% 50%,var(--sun) 0 7%,transparent 7.5%),
-    repeating-conic-gradient(from 45deg at 50% 50%,#b9382f 0 12.5%,#16596a 0 25%);
-  background-size:100% 100%,64px 64px}
-.rug::before{content:"";position:absolute;inset:18px;border:3px solid rgba(255,200,69,.9);border-radius:14px}
-.before{clip-path:inset(0 calc(100% - var(--p,50%)) 0 0)}
-.before .rug{filter:saturate(.45) brightness(.78) sepia(.35)}
-.before::after{content:"";position:absolute;inset:0;
+    radial-gradient(circle at 50% 50%,var(--sun) 0 9%,#fff 9% 10.5%,transparent 10.5%),
+    repeating-conic-gradient(from 45deg at 50% 50%,#c0392b 0 12.5%,#12667a 0 25%);
+  background-size:100% 100%,56px 56px}
+.rug::before{content:"";position:absolute;inset:12px;border:3px solid rgba(255,200,69,.95);border-radius:6px}
+.before{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--p,50%)) 0 0)}
+.before .rug{filter:saturate(.3) brightness(.62) sepia(.6)}
+.before::after{content:"";position:absolute;inset:15% 11%;border-radius:12px;
   background:
-    radial-gradient(ellipse 70px 50px at 24% 30%,rgba(70,40,15,.7),transparent 70%),
-    radial-gradient(ellipse 90px 60px at 38% 72%,rgba(60,35,10,.65),transparent 70%),
-    radial-gradient(ellipse 50px 40px at 12% 80%,rgba(50,30,10,.6),transparent 70%),
-    radial-gradient(ellipse 60px 45px at 46% 18%,rgba(80,50,20,.55),transparent 70%)}
+    radial-gradient(ellipse 18% 16% at 22% 28%,rgba(45,25,8,.85),transparent 72%),
+    radial-gradient(ellipse 22% 18% at 40% 70%,rgba(40,22,6,.8),transparent 72%),
+    radial-gradient(ellipse 14% 14% at 12% 78%,rgba(35,20,6,.75),transparent 72%),
+    radial-gradient(ellipse 16% 15% at 64% 22%,rgba(50,30,10,.7),transparent 72%),
+    radial-gradient(ellipse 20% 16% at 82% 62%,rgba(40,24,8,.7),transparent 72%),
+    rgba(90,70,40,.18)}
 .tag{position:absolute;bottom:14px;padding:6px 14px;border-radius:999px;font:700 .85rem var(--body);background:var(--ink);color:#fff;z-index:2}
 .tag.l{left:14px}.tag.r{right:14px;background:var(--aqua);color:var(--ink)}
 .handle{position:absolute;top:0;bottom:0;left:var(--p,50%);width:4px;background:#fff;transform:translateX(-50%);z-index:3;pointer-events:none}
@@ -142,7 +145,7 @@ footer small{display:block;margin-top:24px;opacity:.6;width:100%}
 
 <header>
   <div class="wrap bar">
-    <a class="logo" href="#"><i></i>Ala Temizlik</a>
+    <a class="logo" href="#"><i></i>Alâ Temizlik</a>
     <nav>
       <a href="#hizmetler">Hizmetler</a>
       <a href="#surec">Nasıl çalışıyoruz</a>
@@ -158,7 +161,7 @@ footer small{display:block;margin-top:24px;opacity:.6;width:100%}
   <div class="wrap">
     <div>
       <h1>Halınız ve koltuğunuz ilk günkü gibi olsun.</h1>
-      <p>Adresinizden alıyoruz, özel makinelerle yıkıyoruz, kurutup paketleyerek kapınıza getiriyoruz. Sizin yapmanız gereken tek şey bir mesaj atmak.</p>
+      <p>Makinemizle evinize geliyoruz, halı ve koltuğunuzu gözünüzün önünde temizliyoruz. Halınız evden çıkmaz, siz sadece bir mesaj atın.</p>
       <div class="cta">
         <a class="btn btn-wa wa" href="https://wa.me/905550000000?text=Merhaba%2C%20halı%20ve%20koltuk%20temizliği%20için%20bilgi%20almak%20istiyorum.">
           <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.300 1.200-1.800 1.200-.5.1-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.9 2.100c.1.200.1.400 0 .5l-.4.600-.4.400c-.1.200-.3.300-.1.600.2.300.7 1.200 1.500 1.900 1 .9 1.900 1.200 2.200 1.300.3.100.4.100.6-.1l.8-1c.2-.3.400-.2.600-.1l2 .9c.3.100.5.200.5.300.1.200.1.800-.1 1.300z"/></svg>
@@ -167,15 +170,15 @@ footer small{display:block;margin-top:24px;opacity:.6;width:100%}
         <a class="btn btn-line" href="#teklif">Ücretsiz fiyat al</a>
       </div>
       <ul class="ticks">
-        <li>Ücretsiz servis</li>
-        <li>Aynı hafta teslim</li>
+        <li>Evinize geliriz</li>
+        <li>Gözünüzün önünde</li>
         <li>Leke garantisi</li>
       </ul>
     </div>
     <div>
       <div class="ba" id="ba" style="--p:50%">
-        <div class="rug"></div>
-        <div class="before"><div class="rug"></div></div>
+        <div class="scene"><div class="rug"></div></div>
+        <div class="before"><div class="scene"><div class="rug"></div></div></div>
         <span class="tag l">Önce</span><span class="tag r">Sonra</span>
         <div class="handle"></div>
         <input type="range" min="0" max="100" value="50" aria-label="Önce ve sonra karşılaştırma çubuğu">
@@ -188,25 +191,23 @@ footer small{display:block;margin-top:24px;opacity:.6;width:100%}
 <section id="hizmetler">
   <div class="wrap">
     <h2>Neleri temizliyoruz?</h2>
-    <p class="lead">Evinizdeki kumaş yüzeylerin hepsi için uygun yöntemi seçiyoruz. Hassas ve antika parçalar için önce küçük bir test yaparız.</p>
+    <p class="lead">Evinizdeki kumaş yüzeylerin hepsini yerinde temizliyoruz. Hassas parçalarda önce küçük bir alanda deneme yaparız.</p>
     <div class="grid">
-      <div class="card"><div class="ico">🧶</div><h3>Halı yıkama</h3><p>Makine, yün, ipek ve shaggy halılar. Toz alma, yıkama, durulama ve hijyenik kurutma.</p></div>
+      <div class="card"><div class="ico">🧶</div><h3>Halı yıkama</h3><p>Makine, yün ve shaggy halılar. Evinizde toz alma, yıkama ve su çekme işlemi yapılır.</p></div>
       <div class="card"><div class="ico">🛋️</div><h3>Koltuk temizliği</h3><p>Evinizde, yerinde yapılır. Köşe takımı, berjer, sandalye ve minderler.</p></div>
-      <div class="card"><div class="ico">🛏️</div><h3>Yatak ve baza</h3><p>Akarları ve kötü kokuyu buharlı sistemle gideriyoruz. Aynı gün kullanıma yakın kurur.</p></div>
-      <div class="card"><div class="ico">🪟</div><h3>Perde yıkama</h3><p>Söküm, yıkama, ütüleme ve yeniden takma. Kumaşa göre özel program.</p></div>
+      <div class="card"><div class="ico">🛏️</div><h3>Yatak ve baza</h3><p>Akarları ve kötü kokuyu makinemizle gideriyoruz. Kısa sürede kullanıma hazır olur.</p></div>
     </div>
   </div>
 </section>
 
 <section class="alt" id="surec">
   <div class="wrap">
-    <h2>Dört adımda tertemiz</h2>
-    <p class="lead">Kapıdan kapıya hizmet. Siz evde beklemeden de teslim edebilirsiniz.</p>
+    <h2>Üç adımda tertemiz</h2>
+    <p class="lead">Dükkana gitmenize ya da halıyı taşımanıza gerek yok. Makinemizle evinize geliyoruz.</p>
     <ol class="steps">
       <li><h3>Bize ulaşın</h3><p>Arayın veya WhatsApp'tan yazın. Halı ölçüsünü ve fotoğrafını göndermeniz yeterli.</p></li>
-      <li><h3>Adresinizden alırız</h3><p>Size uygun gün ve saatte servis aracımız kapınıza gelir.</p></li>
-      <li><h3>Yıkar, kurutur</h3><p>Her halı ayrı değerlendirilir. Leke ve koku özel işlemle giderilir.</p></li>
-      <li><h3>Paketleyip getiririz</h3><p>Temiz ve kokusuz şekilde, steril ambalajıyla teslim ederiz.</p></li>
+      <li><h3>Evinize geliriz</h3><p>Size uygun gün ve saatte makinemizle kapınıza geliyoruz.</p></li>
+      <li><h3>Yerinde temizleriz</h3><p>Leke ve koku özel işlemle giderilir. Sonucu işlem bittiğinde birlikte kontrol ederiz.</p></li>
     </ol>
   </div>
 </section>
@@ -214,18 +215,18 @@ footer small{display:block;margin-top:24px;opacity:.6;width:100%}
 <section>
   <div class="wrap why">
     <div>
-      <h2>Neden Ala Temizlik?</h2>
+      <h2>Neden Alâ Temizlik?</h2>
       <p class="lead">Aileniz ve evcil hayvanlarınız için güvenli ürünler kullanıyoruz. Ne yaptığımızı baştan açıkça söyleriz.</p>
       <ul class="list">
         <li>Ücretsiz keşif ve net fiyat, sürpriz ek ücret yok</li>
         <li>Bebek ve evcil hayvan dostu, kokusuz deterjanlar</li>
-        <li>Teslimden sonra memnun kalmazsanız yeniden yıkarız</li>
-        <li>Sigortalı taşıma, halınız emin ellerde</li>
+        <li>İşlem sonrası memnun kalmazsanız tekrar temizleriz</li>
+        <li>Halınız evinizden çıkmaz, gözünüzün önünde temizlenir</li>
       </ul>
     </div>
     <div class="stats">
       <div class="stat"><b>5000+</b><span>yıkanan halı</span></div>
-      <div class="stat"><b>48 saat</b><span>ortalama teslim süresi</span></div>
+      <div class="stat"><b>Evinizde</b><span>yerinde temizlik</span></div>
       <div class="stat"><b>%98</b><span>müşteri memnuniyeti</span></div>
       <div class="stat"><b>7/24</b><span>WhatsApp desteği</span></div>
     </div>
@@ -236,7 +237,7 @@ footer small{display:block;margin-top:24px;opacity:.6;width:100%}
   <div class="wrap">
     <h2>Müşterilerimiz ne diyor?</h2>
     <div class="grid">
-      <div class="card"><div class="stars">★★★★★</div><p>Yıllardır duran çay lekesi tamamen çıktı. Halı sanki yeni alınmış gibi, söz verilen günde de geldi.</p><small>Ayşe H.</small></div>
+      <div class="card"><div class="stars">★★★★★</div><p>Yıllardır duran çay lekesi tamamen çıktı. Halı sanki yeni alınmış gibi, söz verilen saatte de evime geldiler.</p><small>Ayşe H.</small></div>
       <div class="card"><div class="stars">★★★★★</div><p>Koltukları evde yaptılar, iki saatte bitti ve akşam oturabildik. Çok titiz ve güler yüzlü ekip.</p><small>Mehmet K.</small></div>
       <div class="card"><div class="stars">★★★★★</div><p>Kedimiz var, koku konusunda çok hassasız. Hiç kimyasal kokusu kalmadı. Kesinlikle tavsiye ederim.</p><small>Zeynep T.</small></div>
     </div>
@@ -258,7 +259,6 @@ footer small{display:block;margin-top:24px;opacity:.6;width:100%}
           <option>Halı yıkama</option>
           <option>Koltuk temizliği</option>
           <option>Yatak ve baza temizliği</option>
-          <option>Perde yıkama</option>
         </select>
       </label>
       <label>Adet veya metrekare
@@ -276,16 +276,16 @@ footer small{display:block;margin-top:24px;opacity:.6;width:100%}
 <footer>
   <div class="wrap">
     <div>
-      <b style="color:#fff;font-size:1.2rem">Ala Temizlik</b><br>
-      Halı, koltuk, yatak ve perde temizliği<br>
+      <b style="color:#fff;font-size:1.2rem">Alâ Temizlik</b><br>
+      Halı, koltuk ve yatak temizliği, evinizde<br>
       Çalışma saatleri: Her gün 08:00 - 20:00
     </div>
     <div>
       Telefon: <a href="tel:+905550000000">0555 000 00 00</a><br>
       WhatsApp: <a href="https://wa.me/905550000000">Mesaj gönder</a><br>
-      Adres: Örnek Mah. Örnek Cad. No:1, İstanbul
+      Hizmet bölgesi: İstanbul (semtinizi sorun)
     </div>
-    <small>© 2026 Ala Temizlik. Tüm hakları saklıdır.</small>
+    <small>© 2026 Alâ Temizlik. Tüm hakları saklıdır.</small>
   </div>
 </footer>
 
