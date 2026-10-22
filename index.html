@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alâ Temizlik | Halı ve Koltuk Temizliği, Evinize Geliyoruz</title>
-<meta name="description" content="Halı, koltuk ve yatak temizliği. Makinemizle evinize gelir, yerinde temizleriz. Ücretsiz fiyat için hemen arayın.">
+<title>Alâ Temizlik | Erzincan Halı ve Koltuk Temizliği</title>
+<meta name="description" content="Erzincan’da halı, koltuk ve yatak temizliği. Makinemizle evinize gelir, yerinde temizleriz. Ücretsiz fiyat için hemen arayın.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -58,23 +58,9 @@ nav a:hover{opacity:1;color:var(--sun)}
 
 /* Önce / sonra */
 .ba{position:relative;aspect-ratio:4/3;border-radius:28px;overflow:hidden;border:6px solid rgba(255,255,255,.14);box-shadow:0 30px 60px rgba(0,0,0,.35);user-select:none;touch-action:pan-y}
-.scene{position:absolute;inset:0;background:repeating-linear-gradient(90deg,#c9a173 0 62px,#b4885a 62px 64px)}
-.rug{position:absolute;inset:15% 11%;border-radius:12px;border:7px solid #f4e6c8;box-shadow:0 16px 26px rgba(0,0,0,.35);
-  background:
-    radial-gradient(circle at 50% 50%,var(--sun) 0 9%,#fff 9% 10.5%,transparent 10.5%),
-    repeating-conic-gradient(from 45deg at 50% 50%,#c0392b 0 12.5%,#12667a 0 25%);
-  background-size:100% 100%,56px 56px}
-.rug::before{content:"";position:absolute;inset:12px;border:3px solid rgba(255,200,69,.95);border-radius:6px}
+.scene{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.12),transparent 30%),repeating-linear-gradient(90deg,#cfa879 0 70px,#b88d5e 70px 72px)}
+.rugsvg{position:absolute;left:5%;top:8%;width:90%;height:84%;filter:drop-shadow(0 14px 12px rgba(0,0,0,.4))}
 .before{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--p,50%)) 0 0)}
-.before .rug{filter:saturate(.3) brightness(.62) sepia(.6)}
-.before::after{content:"";position:absolute;inset:15% 11%;border-radius:12px;
-  background:
-    radial-gradient(ellipse 18% 16% at 22% 28%,rgba(45,25,8,.85),transparent 72%),
-    radial-gradient(ellipse 22% 18% at 40% 70%,rgba(40,22,6,.8),transparent 72%),
-    radial-gradient(ellipse 14% 14% at 12% 78%,rgba(35,20,6,.75),transparent 72%),
-    radial-gradient(ellipse 16% 15% at 64% 22%,rgba(50,30,10,.7),transparent 72%),
-    radial-gradient(ellipse 20% 16% at 82% 62%,rgba(40,24,8,.7),transparent 72%),
-    rgba(90,70,40,.18)}
 .tag{position:absolute;bottom:14px;padding:6px 14px;border-radius:999px;font:700 .85rem var(--body);background:var(--ink);color:#fff;z-index:2}
 .tag.l{left:14px}.tag.r{right:14px;background:var(--aqua);color:var(--ink)}
 .handle{position:absolute;top:0;bottom:0;left:var(--p,50%);width:4px;background:#fff;transform:translateX(-50%);z-index:3;pointer-events:none}
@@ -142,6 +128,46 @@ footer small{display:block;margin-top:24px;opacity:.6;width:100%}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+  <pattern id="fr" width="14" height="6" patternUnits="userSpaceOnUse"><rect width="14" height="2.6" y="1.7" fill="#efe2c0"/></pattern>
+  <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="1.6" fill="#e8c36a" opacity=".35"/></pattern>
+  <pattern id="dia" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M8 2 14 8 8 14 2 8Z" fill="#e8c36a" opacity=".7"/></pattern>
+  <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".45" stop-color="#fff" stop-opacity=".28"/><stop offset=".6" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="dirty"><feColorMatrix type="saturate" values=".35"/><feComponentTransfer><feFuncR type="linear" slope=".68"/><feFuncG type="linear" slope=".64"/><feFuncB type="linear" slope=".55"/></feComponentTransfer></filter>
+  <filter id="blur5"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="blur2"><feGaussianBlur stdDeviation="2"/></filter>
+  <g id="rug">
+    <rect x="-14" y="12" width="14" height="236" fill="url(#fr)"/>
+    <rect x="400" y="12" width="14" height="236" fill="url(#fr)"/>
+    <rect x="0" y="8" width="400" height="244" rx="4" fill="#8c1c2b"/>
+    <rect x="8" y="16" width="384" height="228" fill="none" stroke="#efe2c0" stroke-width="5"/>
+    <rect x="18" y="26" width="364" height="208" fill="#1b3a5c"/>
+    <rect x="18" y="26" width="364" height="208" fill="url(#dia)"/>
+    <rect x="34" y="42" width="332" height="176" fill="#a12637"/>
+    <rect x="34" y="42" width="332" height="176" fill="url(#dots)"/>
+    <rect x="34" y="42" width="332" height="176" fill="none" stroke="#e8c36a" stroke-width="2"/>
+    <polygon points="200,52 296,130 200,208 104,130" fill="#1b3a5c" stroke="#e8c36a" stroke-width="3"/>
+    <polygon points="200,76 262,130 200,184 138,130" fill="#c9953a"/>
+    <polygon points="200,92 238,130 200,168 162,130" fill="#8c1c2b" stroke="#efe2c0" stroke-width="2"/>
+    <circle cx="200" cy="130" r="11" fill="#e8c36a"/>
+    <g fill="#1b3a5c" stroke="#e8c36a" stroke-width="2">
+      <polygon points="34,42 84,42 34,92"/><polygon points="366,42 316,42 366,92"/>
+      <polygon points="34,218 84,218 34,168"/><polygon points="366,218 316,218 366,168"/>
+    </g>
+    <g fill="#e8c36a"><polygon points="64,130 76,118 88,130 76,142"/><polygon points="336,130 324,118 312,130 324,142"/></g>
+  </g>
+  <g id="stains">
+    <ellipse cx="110" cy="80" rx="42" ry="26" fill="#2b190a" opacity=".7" filter="url(#blur5)"/>
+    <ellipse cx="290" cy="170" rx="50" ry="30" fill="#2b190a" opacity=".65" filter="url(#blur5)"/>
+    <ellipse cx="80" cy="190" rx="26" ry="18" fill="#3a2410" opacity=".6" filter="url(#blur5)"/>
+    <circle cx="300" cy="78" r="20" fill="none" stroke="#3a2410" stroke-width="5" opacity=".6" filter="url(#blur2)"/>
+    <circle cx="300" cy="78" r="15" fill="#3a2410" opacity=".25" filter="url(#blur2)"/>
+    <path d="M150 210 Q190 190 240 214 T330 206" stroke="#3a2a18" stroke-width="9" fill="none" opacity=".4" filter="url(#blur2)"/>
+    <rect x="18" y="26" width="364" height="208" fill="#b9a67f" opacity=".28"/>
+  </g>
+</defs>
+</svg>
 
 <header>
   <div class="wrap bar">
@@ -161,7 +187,7 @@ footer small{display:block;margin-top:24px;opacity:.6;width:100%}
   <div class="wrap">
     <div>
       <h1>Halınız ve koltuğunuz ilk günkü gibi olsun.</h1>
-      <p>Makinemizle evinize geliyoruz, halı ve koltuğunuzu gözünüzün önünde temizliyoruz. Halınız evden çıkmaz, siz sadece bir mesaj atın.</p>
+      <p>Makinemizle evinize geliyoruz, halı ve koltuğunuzu gözünüzün önünde temizliyoruz. Siz sadece bir mesaj atın, gerisini biz hallederiz.</p>
       <div class="cta">
         <a class="btn btn-wa wa" href="https://wa.me/905550000000?text=Merhaba%2C%20halı%20ve%20koltuk%20temizliği%20için%20bilgi%20almak%20istiyorum.">
           <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.300 1.200-1.800 1.200-.5.1-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.9 2.100c.1.200.1.400 0 .5l-.4.600-.4.400c-.1.200-.3.300-.1.600.2.300.7 1.200 1.500 1.900 1 .9 1.900 1.200 2.200 1.300.3.100.4.100.6-.1l.8-1c.2-.3.400-.2.600-.1l2 .9c.3.100.5.200.5.300.1.200.1.800-.1 1.300z"/></svg>
@@ -170,15 +196,22 @@ footer small{display:block;margin-top:24px;opacity:.6;width:100%}
         <a class="btn btn-line" href="#teklif">Ücretsiz fiyat al</a>
       </div>
       <ul class="ticks">
-        <li>Evinize geliriz</li>
+        <li>Erzincan’da evinize geliriz</li>
         <li>Gözünüzün önünde</li>
-        <li>Leke garantisi</li>
+        <li>Bebek ve evcil hayvan dostu</li>
       </ul>
     </div>
     <div>
       <div class="ba" id="ba" style="--p:50%">
-        <div class="scene"><div class="rug"></div></div>
-        <div class="before"><div class="scene"><div class="rug"></div></div></div>
+        <div class="scene">
+          <svg class="rugsvg" viewBox="-20 0 440 260" role="img" aria-label="Temizlenmiş halı"><use href="#rug"/>
+            <rect x="0" y="8" width="400" height="244" fill="url(#sheen)"/>
+            <g fill="#fff"><path d="M70 60l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/><path d="M330 190l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/><path d="M300 70l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></g>
+          </svg>
+        </div>
+        <div class="before"><div class="scene">
+          <svg class="rugsvg" viewBox="-20 0 440 260" role="img" aria-label="Kirli halı"><g filter="url(#dirty)"><use href="#rug"/></g><use href="#stains"/></svg>
+        </div></div>
         <span class="tag l">Önce</span><span class="tag r">Sonra</span>
         <div class="handle"></div>
         <input type="range" min="0" max="100" value="50" aria-label="Önce ve sonra karşılaştırma çubuğu">
@@ -203,7 +236,7 @@ footer small{display:block;margin-top:24px;opacity:.6;width:100%}
 <section class="alt" id="surec">
   <div class="wrap">
     <h2>Üç adımda tertemiz</h2>
-    <p class="lead">Dükkana gitmenize ya da halıyı taşımanıza gerek yok. Makinemizle evinize geliyoruz.</p>
+    <p class="lead">Halı taşımanıza gerek yok. Makinemizle Erzincan’da evinize geliyoruz.</p>
     <ol class="steps">
       <li><h3>Bize ulaşın</h3><p>Arayın veya WhatsApp'tan yazın. Halı ölçüsünü ve fotoğrafını göndermeniz yeterli.</p></li>
       <li><h3>Evinize geliriz</h3><p>Size uygun gün ve saatte makinemizle kapınıza geliyoruz.</p></li>
@@ -220,8 +253,7 @@ footer small{display:block;margin-top:24px;opacity:.6;width:100%}
       <ul class="list">
         <li>Ücretsiz keşif ve net fiyat, sürpriz ek ücret yok</li>
         <li>Bebek ve evcil hayvan dostu, kokusuz deterjanlar</li>
-        <li>İşlem sonrası memnun kalmazsanız tekrar temizleriz</li>
-        <li>Halınız evinizden çıkmaz, gözünüzün önünde temizlenir</li>
+        <li>Taşıma derdi yok, her şey evinizde ve gözünüzün önünde yapılır</li>
       </ul>
     </div>
     <div class="stats">
@@ -265,7 +297,7 @@ footer small{display:block;margin-top:24px;opacity:.6;width:100%}
         <input type="text" id="miktar" placeholder="Örn. 3 halı veya 20 m²">
       </label>
       <label>Semt / ilçe
-        <input type="text" id="semt" placeholder="Örn. Kadıköy">
+        <input type="text" id="semt" placeholder="Örn. Merkez, Yalnızbağ">
       </label>
       <button class="btn btn-wa" type="submit">WhatsApp ile teklif iste</button>
     </form>
@@ -283,7 +315,7 @@ footer small{display:block;margin-top:24px;opacity:.6;width:100%}
     <div>
       Telefon: <a href="tel:+905550000000">0555 000 00 00</a><br>
       WhatsApp: <a href="https://wa.me/905550000000">Mesaj gönder</a><br>
-      Hizmet bölgesi: İstanbul (semtinizi sorun)
+      Hizmet bölgesi: Erzincan ve çevresi
     </div>
     <small>© 2026 Alâ Temizlik. Tüm hakları saklıdır.</small>
   </div>
